@@ -1,0 +1,34 @@
+{
+  "title" : "3d学习笔记",
+  "author" : "tomgou",
+  "description" : "3d相关知识学习笔记",
+  "language" : "zh-hans",
+  "plugins": [
+    "mathjax-pro",
+    "github",
+    "hide-element",
+    "chapter-fold",
+    "splitter",
+    "-lunr", 
+    "-search", 
+    "search-pro",
+    "copy-code-button",
+    "back-to-top-button",
+    "tbfed-pagefooter",
+    "popup",
+    "mermaid-gb3"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://tomgou.github.io/algorithm-study/"
+    },
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy tomgou 2022",
+      "modify_label": "该文章修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}
