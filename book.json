@@ -4,6 +4,7 @@
   "description" : "3d相关知识学习笔记",
   "language" : "zh-hans",
   "plugins": [
+    "livereload",
     "mathjax-pro",
     "github",
     "hide-element",
@@ -16,7 +17,8 @@
     "back-to-top-button",
     "tbfed-pagefooter",
     "popup",
-    "mermaid-gb3"
+    "mermaid-gb3",
+    "anchor-navigation-ex"
   ],
   "pluginsConfig": {
     "github": {

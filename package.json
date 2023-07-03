@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/TOMGOU/3d-study-notes#readme",
   "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-mathjax-pro": "0.0.6",
     "gitbook-plugin-mermaid-gb3": "^2.1.0",
-    "mathjax": "^2.7.7"
+    "mathjax": "^2.7.6"
   }
 }

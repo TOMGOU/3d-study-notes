@@ -3,7 +3,7 @@
 ##### Step-2: 克隆github仓库
 
 ```
-git clone git@github.com:TOMGOU/work-summary.git
+git clone git@github.com:TOMGOU/3d-study-notes.git
 ```
 ##### Step-3: 进入项目并初始化
 
@@ -102,6 +102,6 @@ npm run gh-pages
 **页面地址：https://tomgou.github.io/algorithm-study/**
 
 ### 这样使用gitbook的好处
-- 不暴露源码（只要不push主分支）
-- 及时预览：gitbook serve 
+- 不暴露源码（只要不push主分支
+- 及时预览：gitbook serve
 - 及时发布：npm run gh-pages
