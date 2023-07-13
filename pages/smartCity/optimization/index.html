@@ -1,0 +1,1388 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>optimization · 3d学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tomgou">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../webGLContext/" />
+    
+    
+    <link rel="prev" href="../mercator/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../threeJS/">
+            
+                <a href="../../threeJS/">
+            
+                    
+                    Basic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../threeJS/Math/">
+            
+                <a href="../../threeJS/Math/">
+            
+                    
+                    Math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../threeJS/Pipeline/">
+            
+                <a href="../../threeJS/Pipeline/">
+            
+                    
+                    Graphics Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../threeJS/Transform/">
+            
+                <a href="../../threeJS/Transform/">
+            
+                    
+                    Transform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../threeJS/Rasterization/">
+            
+                <a href="../../threeJS/Rasterization/">
+            
+                    
+                    Rasterization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../threeJS/Shading/">
+            
+                <a href="../../threeJS/Shading/">
+            
+                    
+                    Shading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../threeJS/RayTracing/">
+            
+                <a href="../../threeJS/RayTracing/">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../shader/">
+            
+                <a href="../../shader/">
+            
+                    
+                    Shader
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../shader/Syntax/">
+            
+                <a href="../../shader/Syntax/">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../shader/BuiltInFunction/">
+            
+                <a href="../../shader/BuiltInFunction/">
+            
+                    
+                    BuiltInFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../shader/BuiltInVariable/">
+            
+                <a href="../../shader/BuiltInVariable/">
+            
+                    
+                    BuiltInVariable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../shader/Shapes/">
+            
+                <a href="../../shader/Shapes/">
+            
+                    
+                    Shapes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../shader/KeyPoints/">
+            
+                <a href="../../shader/KeyPoints/">
+            
+                    
+                    KeyPoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3DDisplay/">
+            
+                <a href="../../3DDisplay/">
+            
+                    
+                    3D-Display
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../3DDisplay/Draco/">
+            
+                <a href="../../3DDisplay/Draco/">
+            
+                    
+                    Draco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../3DDisplay/glTF/">
+            
+                <a href="../../3DDisplay/glTF/">
+            
+                    
+                    glTF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../3DDisplay/CSS3DRender/">
+            
+                <a href="../../3DDisplay/CSS3DRender/">
+            
+                    
+                    CSS3DRender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../3DDisplay/Raycaster/">
+            
+                <a href="../../3DDisplay/Raycaster/">
+            
+                    
+                    Raycaster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../3DDisplay/MaterialReset/">
+            
+                <a href="../../3DDisplay/MaterialReset/">
+            
+                    
+                    MaterialReset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../3DDisplay/Animation/">
+            
+                <a href="../../3DDisplay/Animation/">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../3DDisplay/GuiControls/">
+            
+                <a href="../../3DDisplay/GuiControls/">
+            
+                    
+                    GuiControls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../3DDisplay/Panorama/">
+            
+                <a href="../../3DDisplay/Panorama/">
+            
+                    
+                    Panorama
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../3DDisplay/KeyboardControl/">
+            
+                <a href="../../3DDisplay/KeyboardControl/">
+            
+                    
+                    KeyboardControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../3DDisplay/Audio/">
+            
+                <a href="../../3DDisplay/Audio/">
+            
+                    
+                    Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../3DDisplay/Encoding/">
+            
+                <a href="../../3DDisplay/Encoding/">
+            
+                    
+                    sRGBEncoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Smart-City
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../camera/">
+            
+                <a href="../camera/">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../wander/">
+            
+                <a href="../wander/">
+            
+                    
+                    CurveWander
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../automaticTransform/">
+            
+                <a href="../automaticTransform/">
+            
+                    
+                    automaticTransform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../oribtControl/">
+            
+                <a href="../oribtControl/">
+            
+                    
+                    oribtControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../gsap/">
+            
+                <a href="../gsap/">
+            
+                    
+                    gsap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../CSS2D/">
+            
+                <a href="../CSS2D/">
+            
+                    
+                    CSS2D
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chineseFont/">
+            
+                <a href="../chineseFont/">
+            
+                    
+                    chineseFont
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../observeOperate/">
+            
+                <a href="../observeOperate/">
+            
+                    
+                    observeOperate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../colorDif/">
+            
+                <a href="../colorDif/">
+            
+                    
+                    colorDif
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../stats/">
+            
+                <a href="../stats/">
+            
+                    
+                    Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../geoJson/">
+            
+                <a href="../geoJson/">
+            
+                    
+                    GeoJson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../wallEffects/">
+            
+                <a href="../wallEffects/">
+            
+                    
+                    WallEffects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../mercator/">
+            
+                <a href="../mercator/">
+            
+                    
+                    Mercator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../webGLContext/">
+            
+                <a href="../webGLContext/">
+            
+                    
+                    webGLContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../ourBIM/">
+            
+                <a href="../ourBIM/">
+            
+                    
+                    TechnologySelection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../webGPU/">
+            
+                <a href="../../webGPU/">
+            
+                    
+                    webGPU
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../webGPU/document/">
+            
+                <a href="../../webGPU/document/">
+            
+                    
+                    document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../cesium/">
+            
+                <a href="../../cesium/">
+            
+                    
+                    Cesium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../cesium/shader/">
+            
+                <a href="../../cesium/shader/">
+            
+                    
+                    Custom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../cesium/event/">
+            
+                <a href="../../cesium/event/">
+            
+                    
+                    Event
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >optimization</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#3d-&#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;"><b>1. </b>3D &#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;</a></li><ul><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x4F18;&#x5316;"><b>1.1. </b>&#x52A0;&#x8F7D;&#x4F18;&#x5316;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x7F13;&#x5B58;"><b>1.1.1. </b>1.&#x7F13;&#x5B58;</a></li><li><span class="title-icon "></span><a href="#2&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;"><b>1.1.2. </b>2.&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#3web-worker"><b>1.1.3. </b>3.Web Worker</a></li></ul><li><span class="title-icon "></span><a href="#&#x6E32;&#x67D3;&#x4F18;&#x5316;"><b>1.2. </b>&#x6E32;&#x67D3;&#x4F18;&#x5316;</a></li><ul><li><span class="title-icon "></span><a href="#1drawcall"><b>1.2.1. </b>1.drawcall</a></li><li><span class="title-icon "></span><a href="#2&#x5E27;&#x6570;&#x4F18;&#x5316;"><b>1.2.2. </b>2.&#x5E27;&#x6570;&#x4F18;&#x5316;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5185;&#x5B58;&#x4F18;&#x5316;"><b>1.3. </b>&#x5185;&#x5B58;&#x4F18;&#x5316;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x5185;&#x5B58;&#x91CA;&#x653E;"><b>1.3.1. </b>1.&#x5185;&#x5B58;&#x91CA;&#x653E;</a></li></ul></ul></ul></div><a href="#3d-&#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="3d-&#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;"><a name="3d-&#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#3d-&#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1. 3D &#x9879;&#x76EE;&#x6027;&#x80FD;&#x4F18;&#x5316;</h1>
+<h2 id="&#x52A0;&#x8F7D;&#x4F18;&#x5316;"><a name="&#x52A0;&#x8F7D;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x52A0;&#x8F7D;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x52A0;&#x8F7D;&#x4F18;&#x5316;</h2>
+<h3 id="1&#x7F13;&#x5B58;"><a name="1&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#1&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. 1.&#x7F13;&#x5B58;</h3>
+<h3 id="2&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;"><a name="2&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#2&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. 2.&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;</h3>
+<h3 id="3web-worker"><a name="3web-worker" class="anchor-navigation-ex-anchor" href="#3web-worker"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. 3.Web Worker</h3>
+<blockquote>
+<p>glb &#x6A21;&#x578B;&#x5E76;&#x53D1;&#x52A0;&#x8F7D;&#x5DE5;&#x4F5C;&#x539F;&#x7406;
+web worker &#x53EF;&#x4EE5;&#x89E3;&#x6790; glb &#x6A21;&#x578B; &#x4F46;&#x662F; postMessage &#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EA;&#x662F;&#x666E;&#x901A;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;
+&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x5B58;&#x5728;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x65E0;&#x6CD5;&#x4F20;&#x9012;&#xFF0C;&#x5E26;&#x65B9;&#x6CD5;&#x4F1A;&#x5BFC;&#x81F4;&#x53D1;&#x9001;&#x5931;&#x8D25;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1; onerror
+THREE &#x6784;&#x5EFA;&#x7269;&#x4F53;&#x6240;&#x9700;&#x7684; bufferGeometry&#xFF0C;&#x8FD8;&#x662F; BufferAttribute &#x6216;&#x8005; Material &#x7B49;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x65E0;&#x6CD5;&#x88AB;&#x4F20;&#x9012;
+&#x4F20;&#x9012;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x5C5E;&#x6027;(&#x5BF9;&#x8C61;&#x4E2D;&#x4E0D;&#x80FD;&#x6709;&#x51FD;&#x6570;)
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x751F;&#x6210;&#x4E00;&#x4E2A; THREE &#x6240;&#x9700;&#x7684;&#x7C7B;&#x578B; &#x628A;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x53C2;&#x6570;&#x590D;&#x5236;&#x7ED9; THREE &#x9700;&#x8981;&#x7684;&#x5BF9;&#x8C61;&#x4E0A;
+&#x8FD9;&#x6837;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x540C;&#x6837;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x7701;&#x53BB;&#x4E86;&#x89E3;&#x6790;&#x6A21;&#x578B;&#x65F6;&#x95F4;(&#x6A21;&#x578B;&#x89E3;&#x6790;&#x5728; web worker &#x4E2D;&#x4E0E; js &#x4E3B;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x6267;&#x884C;)&#x5B9E;&#x73B0;&#x5E76;&#x53D1;&#x52A0;&#x8F7D;</p>
+</blockquote>
+<ul>
+<li>&#x521B;&#x5EFA; webworker</li>
+</ul>
+<blockquote>
+<p>&#x666E;&#x901A; worker &#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x5BFC;&#x5165;&#x7684;&#x5E93;: &#x6DFB;&#x52A0;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; { type: &apos;module&apos; }</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-keyword">new</span> URL(<span class="hljs-string">&apos;../composables/task.ts&apos;</span>, <span class="hljs-keyword">import</span>.meta.url), { type: <span class="hljs-string">&apos;module&apos;</span> })
+<span class="hljs-keyword">let</span> model: any = <span class="hljs-literal">null</span>
+worker.onmessage = (event) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;webwork&apos;</span>, event.data)
+  model = parseModel(event.data)
+  <span class="hljs-built_in">console</span>.log({ model })
+  <span class="hljs-comment">// scene.add(model)</span>
+}
+worker.postMessage(<span class="hljs-string">&apos;floor&apos;</span>)
+</code></pre>
+<ul>
+<li>webworker &#x5B50;&#x7EBF;&#x7A0B;&#x4EFB;&#x52A1;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { GLTFLoader } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;three/examples/jsm/loaders/GLTFLoader.js&apos;</span>
+<span class="hljs-keyword">import</span> { DRACOLoader } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;three/examples/jsm/loaders/DRACOLoader.js&apos;</span>
+<span class="hljs-keyword">import</span> setFloorMaterial <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./setFloorMaterial&apos;</span>
+<span class="hljs-keyword">import</span> { genAnimations, genGroupStruct } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./parse&apos;</span>
+
+<span class="hljs-keyword">const</span> loader = <span class="hljs-keyword">new</span> GLTFLoader()
+<span class="hljs-keyword">const</span> dracoLoader = <span class="hljs-keyword">new</span> DRACOLoader()
+dracoLoader.setDecoderPath(<span class="hljs-string">&apos;./3D/draco/&apos;</span>)
+loader.setDRACOLoader(dracoLoader)
+
+onmessage = (e) =&gt; {
+  <span class="hljs-keyword">const</span> num = e.data
+  <span class="hljs-built_in">console</span>.log({ num })
+  loader.load(
+    <span class="hljs-string">&apos;http://localhost:5173/3D/gltf/floor-1.glb&apos;</span>,
+    (gltf: any) =&gt; {
+      <span class="hljs-comment">// &#x6750;&#x8D28;&#x91CD;&#x7F6E;</span>
+      setFloorMaterial(gltf.scene)
+
+      <span class="hljs-keyword">return</span> postMessage({
+        ...genGroupStruct(gltf.scene),
+        sceneAnimations: genAnimations(gltf.animations)
+      })
+    },
+    (xhr: any) =&gt; {
+      <span class="hljs-comment">// console.log({ xhr })</span>
+    },
+    (err: any) =&gt; {
+      <span class="hljs-built_in">console</span>.log({ err })
+      postMessage({ msg: <span class="hljs-string">&apos;Worker &#x6A21;&#x578B;&#x52A0;&#x8F7D;&#x9519;&#x8BEF;&#xFF01;&apos;</span> + num })
+    }
+  )
+}
+</code></pre>
+<ul>
+<li>&#x6A21;&#x578B;&#x89E3;&#x6790;&#x5668;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x57FA;&#x672C;&#x53C2;&#x6570; &#x65CB;&#x8F6C; &#x4F4D;&#x79FB; &#x7F29;&#x653E;&#x7B49;&#x5C5E;&#x6027;
+ */</span>
+<span class="hljs-keyword">const</span> genBaseStruct = (obj: THREE.Object3D) =&gt; {
+  <span class="hljs-keyword">const</span> { type, name, quaternion: q, position: p, rotation: r, scale: s, up: u, userData, visible, matrix } = obj
+  <span class="hljs-keyword">const</span> quaternion = [q.x, q.y, q.z, q.w]
+  <span class="hljs-keyword">const</span> position = [p.x, p.y, p.z]
+  <span class="hljs-keyword">const</span> rotation = [r.x, r.y, r.z, r.order]
+  <span class="hljs-keyword">const</span> scale = [s.x, s.y, s.z]
+  <span class="hljs-keyword">const</span> up = [u.x, u.y, u.z]
+
+  <span class="hljs-keyword">return</span> {
+    type,
+    name,
+    quaternion,
+    position,
+    rotation,
+    scale,
+    up,
+    matrix,
+    userData,
+    visible,
+    children: genObject3DChildren(obj.children),
+    animations: genAnimations(obj.animations)
+  }
+}
+
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x52A8;&#x753B;&#x7ED3;&#x6784;
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> genAnimations = (animations: THREE.AnimationClip[]) =&gt;
+  animations.map((animation) =&gt; {
+    animation[<span class="hljs-string">&apos;tracks&apos;</span>].forEach((t) =&gt; <span class="hljs-keyword">delete</span> t[<span class="hljs-string">&apos;createInterpolant&apos;</span>])
+    <span class="hljs-keyword">return</span> animation
+  })
+
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x7269;&#x4F53;&#x53C2;&#x6570;
+ */</span>
+<span class="hljs-keyword">const</span> genMeshStruct = (mesh: THREE.Mesh) =&gt; {
+  <span class="hljs-keyword">const</span> { geometry, material } = mesh
+
+  <span class="hljs-keyword">return</span> {
+    geometry,
+    material,
+    ...genBaseStruct(mesh)
+  }
+}
+
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x7269;&#x4F53;&#x53C2;&#x6570;
+ */</span>
+<span class="hljs-keyword">const</span> genLineSegmentsStruct = (lineSegments: THREE.LineSegments) =&gt; {
+  <span class="hljs-keyword">const</span> { geometry, material } = lineSegments
+
+  <span class="hljs-keyword">return</span> {
+    geometry,
+    material,
+    ...genBaseStruct(lineSegments)
+  }
+}
+
+<span class="hljs-keyword">const</span> genPointLightStruct = (pointLight: THREE.PointLight) =&gt; {
+  <span class="hljs-keyword">return</span> {
+    power: pointLight.power,
+    color: pointLight.color,
+    decay: pointLight.decay,
+    castShadow: pointLight.castShadow,
+    distance: pointLight.distance,
+    frustumCulled: pointLight.frustumCulled,
+    intensity: pointLight.intensity,
+    layers: pointLight.layers,
+    ...genBaseStruct(pointLight)
+  }
+}
+
+<span class="hljs-keyword">const</span> genObject3DStruct = (object: THREE.Object3D) =&gt; {
+  <span class="hljs-keyword">return</span> {
+    ...genBaseStruct(object)
+  }
+}
+
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x5B50;&#x5143;&#x7D20;&#x7ED3;&#x6784;
+ */</span>
+<span class="hljs-keyword">const</span> genObject3DChildren = (children: THREE.Object3D[]) =&gt; {
+  <span class="hljs-keyword">const</span> childStruct = []
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> child <span class="hljs-keyword">of</span> children) {
+    <span class="hljs-keyword">const</span> { type } = child
+    <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Mesh&apos;</span>) {
+      childStruct.push(genMeshStruct(child <span class="hljs-keyword">as</span> THREE.Mesh))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;LineSegments&apos;</span>) {
+      childStruct.push(genLineSegmentsStruct(child <span class="hljs-keyword">as</span> THREE.LineSegments))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Group&apos;</span>) {
+      childStruct.push(genGroupStruct(child <span class="hljs-keyword">as</span> THREE.Group))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;PointLight&apos;</span>) {
+      childStruct.push(genPointLightStruct(child <span class="hljs-keyword">as</span> THREE.PointLight))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Object3D&apos;</span>) {
+      childStruct.push(genObject3DStruct(child))
+    }
+  }
+  <span class="hljs-keyword">return</span> childStruct
+}
+
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x7269;&#x4F53;&#x7EC4;&#x7ED3;&#x6784;
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> genGroupStruct = (group: THREE.Group) =&gt; {
+  <span class="hljs-keyword">const</span> struct = { ...genBaseStruct(group) }
+  <span class="hljs-keyword">return</span> struct
+}
+</code></pre>
+<ul>
+<li>&#x6A21;&#x578B;&#x52A0;&#x8F7D;&#x5668;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> THREE <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;three&apos;</span>
+<span class="hljs-keyword">import</span> { THREEMaterialType, Vector3Arr, IBaseProps, IGroupParams, IMeshParams, IPointLight } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./types&apos;</span>
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7;&#x8BBE;&#x7F6E;attributes index&#x6765;&#x590D;&#x523B;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x4F53;
+ */</span>
+<span class="hljs-keyword">const</span> genGeometry = (geometry: IMeshParams[<span class="hljs-string">&apos;geometry&apos;</span>]) =&gt; {
+  <span class="hljs-keyword">const</span> geom = <span class="hljs-keyword">new</span> THREE.BufferGeometry()
+  <span class="hljs-comment">// const geom = new THREE.InstancedBufferGeometry()</span>
+  <span class="hljs-keyword">const</span> {
+    attributes: { position, uv, normal },
+    index
+  } = geometry
+
+  <span class="hljs-built_in">console</span>.log({ position, uv, normal })
+
+  <span class="hljs-comment">//&#x5904;&#x7406;&#x51E0;&#x4F55;&#x5750;&#x6807;</span>
+
+  <span class="hljs-keyword">const</span> vertexBuffer = <span class="hljs-keyword">new</span> THREE.InterleavedBuffer(position.data.array, <span class="hljs-number">8</span>)
+  <span class="hljs-keyword">const</span> positions = <span class="hljs-keyword">new</span> THREE.InterleavedBufferAttribute(vertexBuffer, position.itemSize, position.offset, position.normalized)
+  geom.setAttribute(<span class="hljs-string">&apos;position&apos;</span>, positions)
+  <span class="hljs-keyword">const</span> uvs = <span class="hljs-keyword">new</span> THREE.InterleavedBufferAttribute(vertexBuffer, uv.itemSize, uv.offset, uv.normalized)
+  geom.setAttribute(<span class="hljs-string">&apos;uv&apos;</span>, uvs)
+  <span class="hljs-keyword">const</span> normals = <span class="hljs-keyword">new</span> THREE.InterleavedBufferAttribute(vertexBuffer, normal.itemSize, normal.offset, normal.normalized)
+  geom.setAttribute(<span class="hljs-string">&apos;normal&apos;</span>, normals)
+
+  geom.setIndex(index ? <span class="hljs-keyword">new</span> THREE.BufferAttribute(index.array, index.itemSize, index.normalized) : <span class="hljs-literal">null</span>)
+
+  <span class="hljs-comment">// const attributes = {</span>
+  <span class="hljs-comment">//   position: new THREE.BufferAttribute(position.data.array, position.itemSize, position.normalized),</span>
+  <span class="hljs-comment">//   uv: new THREE.BufferAttribute(uv.data.array, uv.itemSize, uv.normalized),</span>
+  <span class="hljs-comment">//   normal: new THREE.BufferAttribute(normal.data.array, normal.itemSize, normal.normalized)</span>
+  <span class="hljs-comment">// }</span>
+  <span class="hljs-comment">// geom.attributes = attributes</span>
+  <span class="hljs-comment">// geom.index = index ? new THREE.BufferAttribute(index.array, index.itemSize, index.normalized) : null</span>
+
+  <span class="hljs-keyword">return</span> geom
+}
+
+<span class="hljs-comment">/**
+ * &#x901A;&#x8FC7;&#x8BBE;&#x7F6E;attributes index&#x6765;&#x590D;&#x523B;&#x4E00;&#x4E2A; LineSegments &#x96C6;&#x5408;&#x4F53;
+ */</span>
+<span class="hljs-keyword">const</span> genLineSegmentsGeometry = (geometry: IMeshParams[<span class="hljs-string">&apos;geometry&apos;</span>]) =&gt; {
+  <span class="hljs-keyword">const</span> geom = <span class="hljs-keyword">new</span> THREE.BufferGeometry()
+  <span class="hljs-comment">// const geom = new THREE.InstancedBufferGeometry()</span>
+  <span class="hljs-keyword">const</span> {
+    attributes: { position }
+  } = geometry
+
+  <span class="hljs-comment">// &#x5904;&#x7406;&#x51E0;&#x4F55;&#x5750;&#x6807;</span>
+  geom.setAttribute(<span class="hljs-string">&apos;position&apos;</span>, <span class="hljs-keyword">new</span> THREE.BufferAttribute(position.array, position.itemSize, position.normalized))
+
+  <span class="hljs-keyword">return</span> geom
+}
+
+<span class="hljs-comment">/**
+ * &#x6839;&#x636E;&#x4F20;&#x5165;&#x7EB9;&#x7406;&#x7684;&#x53C2;&#x6570;&#x751F;&#x6210;&#x771F;&#x6B63;&#x6709;&#x6548;&#x7684;Material&#x7C7B;&#x578B;&#x6570;&#x636E;
+ */</span>
+<span class="hljs-keyword">const</span> genMaterial = (mate: IMeshParams[<span class="hljs-string">&apos;material&apos;</span>]) =&gt; {
+  <span class="hljs-keyword">if</span> (!mate) <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>
+  <span class="hljs-keyword">const</span> multipleMaterial = <span class="hljs-built_in">Array</span>.isArray(mate)
+  <span class="hljs-keyword">const</span> material = multipleMaterial ? ([] <span class="hljs-keyword">as</span> THREE.Material[]) : <span class="hljs-keyword">new</span> THREE[mate.type <span class="hljs-keyword">as</span> THREEMaterialType]()
+  <span class="hljs-comment">//&#x5904;&#x7406;&#x6750;&#x8D28;</span>
+  <span class="hljs-comment">//&#x591A;&#x4E2A;&#x6750;&#x8D28;</span>
+  <span class="hljs-keyword">if</span> (multipleMaterial &amp;&amp; <span class="hljs-built_in">Array</span>.isArray(material)) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> m <span class="hljs-keyword">of</span> mate) {
+      <span class="hljs-keyword">const</span> im = <span class="hljs-keyword">new</span> THREE[m.type <span class="hljs-keyword">as</span> THREEMaterialType]()
+      material.push(im)
+    }
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (mate) {
+    <span class="hljs-comment">//&#x5355;&#x4E2A;&#x6750;&#x8D28;</span>
+    <span class="hljs-built_in">Object</span>.assign(material, mate)
+  }
+  <span class="hljs-keyword">return</span> material
+}
+
+<span class="hljs-comment">/**
+ * &#x5904;&#x7406;&#x57FA;&#x672C;&#x5C5E;&#x6027;&#x8F6C;&#x6362;(Object3D&#x57FA;&#x7C7B;&#x4E0A;&#x7684;&#x5C5E;&#x6027;) matrix scale rotate translate position children  animations
+ */</span>
+<span class="hljs-keyword">const</span> parseBaseParams = (params: IBaseProps, object: THREE.Object3D) =&gt; {
+  <span class="hljs-keyword">const</span> matrix = <span class="hljs-keyword">new</span> THREE.Matrix4()
+  matrix.elements = params.matrix.elements
+  object.name = params.name
+  object.matrix = matrix
+  object.rotation.set(...params.rotation)
+  object.position.set(...params.position)
+  object.scale.set(...params.scale)
+  object.quaternion.set(...params.quaternion)
+  object.up.set(...params.up)
+  object.userData = params.userData
+  object.visible = params.visible
+
+  parseChildren(object, params.children)
+  genAnimations(object, params.animations)
+}
+
+<span class="hljs-keyword">const</span> parseMesh = (IMeshParams: IMeshParams) =&gt; {
+  <span class="hljs-keyword">const</span> geometry = genGeometry(IMeshParams.geometry)
+  <span class="hljs-keyword">const</span> material = genMaterial(IMeshParams.material)
+
+  <span class="hljs-keyword">const</span> mesh = <span class="hljs-keyword">new</span> THREE.Mesh(geometry, material)
+  parseBaseParams(IMeshParams, mesh)
+  <span class="hljs-keyword">return</span> mesh
+}
+
+<span class="hljs-keyword">const</span> parseLineSegments = (ILineSegments: IMeshParams) =&gt; {
+  <span class="hljs-keyword">const</span> geometry = genLineSegmentsGeometry(ILineSegments.geometry)
+  <span class="hljs-keyword">const</span> material = genMaterial(ILineSegments.material)
+
+  <span class="hljs-keyword">const</span> line = <span class="hljs-keyword">new</span> THREE.LineSegments(geometry, material)
+  parseBaseParams(ILineSegments, line)
+  <span class="hljs-keyword">return</span> line
+}
+
+<span class="hljs-keyword">const</span> parseGroup = (params: IGroupParams) =&gt; {
+  <span class="hljs-keyword">const</span> group = <span class="hljs-keyword">new</span> THREE.Group()
+  parseBaseParams(params, group)
+  <span class="hljs-keyword">return</span> group
+}
+
+<span class="hljs-keyword">const</span> parsePointLight = (params: IPointLight) =&gt; {
+  <span class="hljs-keyword">const</span> color = <span class="hljs-keyword">new</span> THREE.Color()
+  <span class="hljs-comment">// &#x8272;&#x5F69;&#x7A7A;&#x95F4;</span>
+  <span class="hljs-comment">// export type ColorSpace = NoColorSpace | SRGBColorSpace | LinearSRGBColorSpace</span>
+  <span class="hljs-comment">// export type NoColorSpace = &apos;&apos;</span>
+  <span class="hljs-comment">// export type SRGBColorSpace = &apos;srgb&apos;</span>
+  <span class="hljs-comment">// export type LinearSRGBColorSpace = &apos;srgb-linear&apos;</span>
+  <span class="hljs-comment">//glb&#x6A21;&#x578B;&#x4E3A;&#x4E86;&#x4EAE;&#x5EA6;&#x6062;&#x590D; &#x4F7F;&#x7528;srgb&#x683C;&#x5F0F; &#x6240;&#x4EE5;&#x989C;&#x8272;&#x4E5F;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x683C;&#x5F0F; &#x4F7F;&#x5176;&#x989C;&#x8272;&#x6A21;&#x5F0F;&#x4E00;&#x81F4;</span>
+  color.setRGB(params.color.r, params.color.g, params.color.b, <span class="hljs-string">&apos;srgb-linear&apos;</span>)
+
+  <span class="hljs-keyword">const</span> pointLight = <span class="hljs-keyword">new</span> THREE.PointLight(color, params.intensity, params.distance, params.decay)
+  parseBaseParams(params, pointLight)
+  <span class="hljs-keyword">return</span> pointLight
+}
+
+<span class="hljs-keyword">const</span> parseObject3D = (params: IBaseProps) =&gt; {
+  <span class="hljs-keyword">const</span> object = <span class="hljs-keyword">new</span> THREE.Object3D()
+  parseBaseParams(params, object)
+  <span class="hljs-keyword">return</span> object
+}
+
+<span class="hljs-keyword">const</span> parseChildren = (object3D: THREE.Object3D, children: IBaseProps[]) =&gt; {
+  <span class="hljs-keyword">if</span> (!children.length) <span class="hljs-keyword">return</span>
+  <span class="hljs-keyword">const</span> objectList: THREE.Object3D[] = []
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> child <span class="hljs-keyword">of</span> children) {
+    <span class="hljs-keyword">const</span> { type } = child
+    <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Mesh&apos;</span>) {
+      objectList.push(parseMesh(child <span class="hljs-keyword">as</span> IMeshParams))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;LineSegments&apos;</span>) {
+      objectList.push(parseLineSegments(child <span class="hljs-keyword">as</span> IMeshParams))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Group&apos;</span>) {
+      objectList.push(parseGroup(child))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;PointLight&apos;</span>) {
+      objectList.push(parsePointLight(child <span class="hljs-keyword">as</span> IPointLight))
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;Object3D&apos;</span>) {
+      objectList.push(parseObject3D(child))
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;&#x51FA;&#x73B0;&#x4E86;&#x672A;&#x5904;&#x7406;&#x7684;&#x7C7B;&#x578B;&#xFF1A;&apos;</span> + type)
+    }
+  }
+
+  object3D.add(...objectList)
+}
+<span class="hljs-comment">/**
+ * &#x751F;&#x6210;&#x52A8;&#x753B;
+ */</span>
+<span class="hljs-keyword">const</span> genAnimations = (object3D: THREE.Object3D, sceneAnimations: IGroupParams[<span class="hljs-string">&apos;sceneAnimations&apos;</span>]) =&gt; {
+  <span class="hljs-keyword">if</span> (!sceneAnimations) <span class="hljs-keyword">return</span>
+  <span class="hljs-keyword">const</span> animations: THREE.AnimationClip[] = []
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> animation <span class="hljs-keyword">of</span> sceneAnimations!) {
+    <span class="hljs-keyword">const</span> clip = <span class="hljs-keyword">new</span> THREE.AnimationClip(animation.name, animation.duration, [], animation.blendMode)
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> { name, times, values } <span class="hljs-keyword">of</span> animation.tracks) {
+      <span class="hljs-keyword">const</span> nreTrack = <span class="hljs-keyword">new</span> THREE.QuaternionKeyframeTrack(name, times <span class="hljs-keyword">as</span> any, values <span class="hljs-keyword">as</span> any)
+      clip.tracks.push(nreTrack)
+    }
+
+    animations.push(clip)
+  }
+
+  object3D.animations = animations
+}
+
+<span class="hljs-comment">/**
+ * &#x89E3;&#x6790;&#x4F20;&#x5165;&#x7684;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x751F;&#x6210;&#x6709;&#x6548;&#x7684;three.js&#x7269;&#x4F53;
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> parseModel = (params: IGroupParams) =&gt; {
+  <span class="hljs-keyword">const</span> model = parseGroup(params)
+  <span class="hljs-comment">// model.position.x += 10</span>
+  genAnimations(model, params.sceneAnimations)
+  <span class="hljs-comment">// console.log(&apos;&#x89E3;&#x6790;&#x5B8C;:&apos;, model)</span>
+
+  <span class="hljs-keyword">return</span> model
+}
+</code></pre>
+<h2 id="&#x6E32;&#x67D3;&#x4F18;&#x5316;"><a name="&#x6E32;&#x67D3;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6E32;&#x67D3;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6E32;&#x67D3;&#x4F18;&#x5316;</h2>
+<h3 id="1drawcall"><a name="1drawcall" class="anchor-navigation-ex-anchor" href="#1drawcall"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. 1.drawcall</h3>
+<blockquote>
+<p>draw call &#x662F;&#x6307;&#x5411;&#x56FE;&#x5F62;&#x5904;&#x7406;&#x5668;&#x53D1;&#x51FA;&#x7684;&#x7ED8;&#x5236;&#x547D;&#x4EE4;&#x3002;&#x6BCF;&#x6B21;&#x8C03;&#x7528; draw call&#xFF0C;&#x90FD;&#x4F1A;&#x5411; GPU &#x53D1;&#x9001;&#x4E00;&#x7EC4;&#x9876;&#x70B9;&#x548C;&#x4E00;&#x7EC4;&#x7EB9;&#x7406;&#xFF0C;&#x7136;&#x540E; GPU &#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7ED8;&#x5236;&#x51FA;&#x4E00;&#x4E2A;&#x4E09;&#x7EF4;&#x7269;&#x4F53;&#x3002;&#x5728;&#x7ED8;&#x5236;&#x590D;&#x6742;&#x7684;&#x573A;&#x666F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x53D1;&#x51FA;&#x5927;&#x91CF;&#x7684; draw call&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x6027;&#x80FD;&#x4EA7;&#x751F;&#x8D1F;&#x9762;&#x5F71;&#x54CD;</p>
+</blockquote>
+<ul>
+<li><p>&#x51CF;&#x5C11;&#x6750;&#x8D28;&#x7684;&#x6570;&#x91CF;&#xFF1A;&#x6BCF;&#x4E2A;&#x6750;&#x8D28;&#x90FD;&#x9700;&#x8981;&#x5355;&#x72EC;&#x7684; draw call&#xFF0C;&#x56E0;&#x6B64;&#x51CF;&#x5C11;&#x6750;&#x8D28;&#x7684;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x7EB9;&#x7406;&#x56FE;&#x96C6;&#xFF1A;&#x5C06;&#x591A;&#x4E2A;&#x7EB9;&#x7406;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x7EB9;&#x7406;&#x56FE;&#x96C6;&#x53EF;&#x4EE5;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x5408;&#x5E76;&#x7F51;&#x683C;&#xFF1A;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x7F51;&#x683C;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x6750;&#x8D28;&#x548C;&#x7EB9;&#x7406;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x7F51;&#x683C;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x51CF;&#x5C11;&#x706F;&#x5149;&#x7684;&#x6570;&#x91CF;&#xFF1A;&#x6BCF;&#x4E2A;&#x706F;&#x5149;&#x90FD;&#x9700;&#x8981;&#x5355;&#x72EC;&#x7684; draw call&#xFF0C;&#x56E0;&#x6B64;&#x51CF;&#x5C11;&#x706F;&#x5149;&#x7684;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x51CF;&#x5C11;&#x900F;&#x660E;&#x5EA6;&#x7269;&#x4F53;&#x7684;&#x6570;&#x91CF;&#xFF1A;&#x900F;&#x660E;&#x5EA6;&#x7269;&#x4F53;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6DF7;&#x5408;&#x548C;&#x6392;&#x5E8F;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x66F4;&#x591A;&#x7684; draw call&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x51CF;&#x5C11;&#x900F;&#x660E;&#x5EA6;&#x7269;&#x4F53;&#x7684;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; LOD&#xFF08;&#x5C42;&#x7EA7;&#x7EC6;&#x8282;&#xFF09;&#xFF1A;&#x4F7F;&#x7528; LOD &#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8DDD;&#x79BB;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x7269;&#x4F53;&#x7684;&#x7EC6;&#x8282;&#x7EA7;&#x522B;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x7EC6;&#x8282;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x7269;&#x4F53;&#x7684; draw call &#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x6279;&#x5904;&#x7406;&#xFF1A;&#x6279;&#x5904;&#x7406;&#x662F;&#x5C06;&#x591A;&#x4E2A;&#x7269;&#x4F53;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A; draw call &#x7684;&#x6280;&#x672F;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; GPU &#x5B9E;&#x4F8B;&#x5316;&#xFF1A;GPU &#x5B9E;&#x4F8B;&#x5316;&#x662F;&#x5728; GPU &#x4E0A;&#x7ED8;&#x5236;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x7269;&#x4F53;&#x7684;&#x4E00;&#x79CD;&#x6280;&#x672F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5355;&#x4E2A; draw call &#x6765;&#x7ED8;&#x5236;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11; draw call &#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+</ul>
+<h3 id="2&#x5E27;&#x6570;&#x4F18;&#x5316;"><a name="2&#x5E27;&#x6570;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#2&#x5E27;&#x6570;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. 2.&#x5E27;&#x6570;&#x4F18;&#x5316;</h3>
+<blockquote>
+<p>&#x5E27;&#x6570;&#xFF08;FPS&#xFF09;&#x662F;&#x8861;&#x91CF;&#x6027;&#x80FD;&#x7684;&#x91CD;&#x8981;&#x6307;&#x6807;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x8F83;&#x9AD8;&#x7684;&#x5E27;&#x6570;&#x610F;&#x5473;&#x7740;&#x66F4;&#x6D41;&#x7545;&#x7684;&#x4F53;&#x9A8C;&#x548C;&#x66F4;&#x597D;&#x7684;&#x6E38;&#x620F;&#x611F;&#x89C9;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5185;&#x5B58;&#x4F18;&#x5316;"><a name="&#x5185;&#x5B58;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x5B58;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5185;&#x5B58;&#x4F18;&#x5316;</h2>
+<ul>
+<li><p>&#x51CF;&#x5C11;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x591A;&#x8FB9;&#x5F62;&#x6570;&#x91CF;&#xFF1A;&#x51CF;&#x5C11;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x591A;&#x8FB9;&#x5F62;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x548C;&#x6E32;&#x67D3;&#x65F6;&#x95F4;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x8FB9;&#x5F62;&#x5316;&#x5DE5;&#x5177;&#x6765;&#x5C06;&#x590D;&#x6742;&#x7684;&#x51E0;&#x4F55;&#x4F53;&#x8F6C;&#x6362;&#x4E3A;&#x7B80;&#x5355;&#x7684;&#x51E0;&#x4F55;&#x4F53;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x591A;&#x8FB9;&#x5F62;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x7EB9;&#x7406;&#x5408;&#x96C6;&#xFF1A;&#x4F7F;&#x7528;&#x7EB9;&#x7406;&#x5408;&#x96C6;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A;&#x7EB9;&#x7406;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x7EB9;&#x7406;&#x96C6;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+</li>
+<li><p>&#x4F18;&#x5316;&#x7EB9;&#x7406;&#x5927;&#x5C0F;&#xFF1A;&#x4F7F;&#x7528;&#x9002;&#x5F53;&#x5927;&#x5C0F;&#x7684;&#x7EB9;&#x7406;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3002;&#x5982;&#x679C;&#x7EB9;&#x7406;&#x5927;&#x5C0F;&#x8FC7;&#x5927;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x538B;&#x7F29;&#x6280;&#x672F;&#x5C06;&#x5176;&#x538B;&#x7F29;&#x4E3A;&#x8F83;&#x5C0F;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+</li>
+<li><p>&#x91CA;&#x653E;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#xFF1A;&#x5728;&#x573A;&#x666F;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x91CA;&#x653E;&#x3002;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5728;&#x573A;&#x666F;&#x4E2D;&#x52A0;&#x8F7D;&#x548C;&#x5378;&#x8F7D;&#x8D44;&#x6E90;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x6D6A;&#x8D39;&#x5185;&#x5B58;&#x3002;</p>
+</li>
+<li><p>&#x4F18;&#x5316;&#x811A;&#x672C;&#xFF1A;&#x5982;&#x679C;&#x811A;&#x672C;&#x5728;&#x573A;&#x666F;&#x4E2D;&#x6D88;&#x8017;&#x5927;&#x91CF;&#x5185;&#x5B58;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x5B83;&#x4EEC;&#x4EE5;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3002;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x66F4;&#x5C11;&#x7684;&#x53D8;&#x91CF;&#x3001;&#x66F4;&#x5C11;&#x7684;&#x9012;&#x5F52;&#x548C;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x6280;&#x672F;&#x3002;</p>
+</li>
+<li><p>&#x57FA;&#x4E8E; LOD &#x7EA7;&#x522B;&#x51CF;&#x5C11;&#x6A21;&#x578B;&#x7684;&#x7EC6;&#x8282;&#xFF1A;&#x5F53;&#x6A21;&#x578B;&#x8DDD;&#x79BB;&#x76F8;&#x673A;&#x8D8A;&#x8FDC;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x9010;&#x6B65;&#x51CF;&#x5C11;&#x5176;&#x7EC6;&#x8282;&#x7EA7;&#x522B;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x6A21;&#x578B;&#x590D;&#x7528;&#xFF1A;&#x5BF9;&#x4E8E;&#x591A;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x51E0;&#x4F55;&#x4F53;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6A21;&#x578B;&#x590D;&#x7528;&#xFF0C;&#x8FD9;&#x6837;&#x53EA;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x4E00;&#x4EFD;&#x51E0;&#x4F55;&#x4F53;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x4E2D;&#x5171;&#x4EAB;&#x3002;</p>
+</li>
+<li><p>&#x7981;&#x7528;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x7279;&#x6027;&#xFF1A;&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x7279;&#x6027;&#x4E0D;&#x5FC5;&#x8981;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x5B83;&#x4EEC;&#x4EE5;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x9634;&#x5F71;&#x3001;&#x53CD;&#x5C04;&#x548C;&#x6297;&#x952F;&#x9F7F;&#x7B49;&#x6548;&#x679C;&#x3002;</p>
+</li>
+</ul>
+<h3 id="1&#x5185;&#x5B58;&#x91CA;&#x653E;"><a name="1&#x5185;&#x5B58;&#x91CA;&#x653E;" class="anchor-navigation-ex-anchor" href="#1&#x5185;&#x5B58;&#x91CA;&#x653E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. 1.&#x5185;&#x5B58;&#x91CA;&#x653E;</h3>
+<pre><code class="lang-js">onBeforeUnmount(() =&gt; {
+  <span class="hljs-keyword">try</span> {
+    scene.clear()
+    renderer.dispose()
+    group.remove(buildingModel)
+    group.remove(buildingModelWire)
+    scene.remove(group)
+    scene.remove.apply(scene, scene.children)
+    renderer.forceContextLoss()
+    renderer.content = <span class="hljs-literal">null</span>
+    cancelAnimationFrame(animationID.value)
+    <span class="hljs-keyword">const</span> gl = renderer.domElement.getContext(<span class="hljs-string">&apos;Model&apos;</span>)
+    gl &amp;&amp; gl.getExtension(<span class="hljs-string">&apos;WEBGL_lose_context&apos;</span>).loseContext()
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">console</span>.log(e)
+  }
+})
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tomgou 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-03-13 15:09:27
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../mercator/" class="navigation navigation-prev " aria-label="Previous page: Mercator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../webGLContext/" class="navigation navigation-next " aria-label="Next page: webGLContext">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"optimization","level":"1.5.14","depth":2,"next":{"title":"webGLContext","level":"1.5.15","depth":2,"path":"pages/smartCity/webGLContext/index.md","ref":"pages/smartCity/webGLContext/index.md","articles":[]},"previous":{"title":"Mercator","level":"1.5.13","depth":2,"path":"pages/smartCity/mercator/index.md","ref":"pages/smartCity/mercator/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload","mathjax-pro","github","hide-element","chapter-fold","splitter","-lunr","-search","search-pro","copy-code-button","back-to-top-button","tbfed-pagefooter","popup","mermaid-gb3","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tomgou 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://tomgou.github.io/algorithm-study/"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"back-to-top-button":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"tomgou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"3d学习笔记","language":"zh-hans","gitbook":"*","description":"3d相关知识学习笔记"},"file":{"path":"pages/smartCity/optimization/index.md","mtime":"2023-03-13T07:09:27.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-12T06:49:21.694Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,1077 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Transform · 3d学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tomgou">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Rasterization/" />
+    
+    
+    <link rel="prev" href="../Pipeline/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Basic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Math/">
+            
+                <a href="../Math/">
+            
+                    
+                    Math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Pipeline/">
+            
+                <a href="../Pipeline/">
+            
+                    
+                    Graphics Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Transform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Rasterization/">
+            
+                <a href="../Rasterization/">
+            
+                    
+                    Rasterization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Shading/">
+            
+                <a href="../Shading/">
+            
+                    
+                    Shading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../RayTracing/">
+            
+                <a href="../RayTracing/">
+            
+                    
+                    Ray Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../shader/">
+            
+                <a href="../../shader/">
+            
+                    
+                    Shader
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../shader/Syntax/">
+            
+                <a href="../../shader/Syntax/">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../shader/BuiltInFunction/">
+            
+                <a href="../../shader/BuiltInFunction/">
+            
+                    
+                    BuiltInFunction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../shader/BuiltInVariable/">
+            
+                <a href="../../shader/BuiltInVariable/">
+            
+                    
+                    BuiltInVariable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../shader/Shapes/">
+            
+                <a href="../../shader/Shapes/">
+            
+                    
+                    Shapes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../shader/KeyPoints/">
+            
+                <a href="../../shader/KeyPoints/">
+            
+                    
+                    KeyPoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3DDisplay/">
+            
+                <a href="../../3DDisplay/">
+            
+                    
+                    3D-Display
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../3DDisplay/Draco/">
+            
+                <a href="../../3DDisplay/Draco/">
+            
+                    
+                    Draco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../3DDisplay/glTF/">
+            
+                <a href="../../3DDisplay/glTF/">
+            
+                    
+                    glTF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../3DDisplay/CSS3DRender/">
+            
+                <a href="../../3DDisplay/CSS3DRender/">
+            
+                    
+                    CSS3DRender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../3DDisplay/Raycaster/">
+            
+                <a href="../../3DDisplay/Raycaster/">
+            
+                    
+                    Raycaster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../3DDisplay/MaterialReset/">
+            
+                <a href="../../3DDisplay/MaterialReset/">
+            
+                    
+                    MaterialReset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../3DDisplay/Animation/">
+            
+                <a href="../../3DDisplay/Animation/">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../3DDisplay/GuiControls/">
+            
+                <a href="../../3DDisplay/GuiControls/">
+            
+                    
+                    GuiControls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../3DDisplay/Panorama/">
+            
+                <a href="../../3DDisplay/Panorama/">
+            
+                    
+                    Panorama
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../3DDisplay/KeyboardControl/">
+            
+                <a href="../../3DDisplay/KeyboardControl/">
+            
+                    
+                    KeyboardControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../3DDisplay/Audio/">
+            
+                <a href="../../3DDisplay/Audio/">
+            
+                    
+                    Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../3DDisplay/Encoding/">
+            
+                <a href="../../3DDisplay/Encoding/">
+            
+                    
+                    sRGBEncoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../smartCity/">
+            
+                <a href="../../smartCity/">
+            
+                    
+                    Smart-City
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../smartCity/camera/">
+            
+                <a href="../../smartCity/camera/">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../smartCity/wander/">
+            
+                <a href="../../smartCity/wander/">
+            
+                    
+                    CurveWander
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../smartCity/automaticTransform/">
+            
+                <a href="../../smartCity/automaticTransform/">
+            
+                    
+                    automaticTransform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../smartCity/oribtControl/">
+            
+                <a href="../../smartCity/oribtControl/">
+            
+                    
+                    oribtControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../smartCity/gsap/">
+            
+                <a href="../../smartCity/gsap/">
+            
+                    
+                    gsap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../smartCity/CSS2D/">
+            
+                <a href="../../smartCity/CSS2D/">
+            
+                    
+                    CSS2D
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../smartCity/chineseFont/">
+            
+                <a href="../../smartCity/chineseFont/">
+            
+                    
+                    chineseFont
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../smartCity/observeOperate/">
+            
+                <a href="../../smartCity/observeOperate/">
+            
+                    
+                    observeOperate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../smartCity/colorDif/">
+            
+                <a href="../../smartCity/colorDif/">
+            
+                    
+                    colorDif
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../smartCity/stats/">
+            
+                <a href="../../smartCity/stats/">
+            
+                    
+                    Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../../smartCity/geoJson/">
+            
+                <a href="../../smartCity/geoJson/">
+            
+                    
+                    GeoJson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../../smartCity/wallEffects/">
+            
+                <a href="../../smartCity/wallEffects/">
+            
+                    
+                    WallEffects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../../smartCity/mercator/">
+            
+                <a href="../../smartCity/mercator/">
+            
+                    
+                    Mercator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../../smartCity/optimization/">
+            
+                <a href="../../smartCity/optimization/">
+            
+                    
+                    optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../../smartCity/webGLContext/">
+            
+                <a href="../../smartCity/webGLContext/">
+            
+                    
+                    webGLContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../../smartCity/ourBIM/">
+            
+                <a href="../../smartCity/ourBIM/">
+            
+                    
+                    TechnologySelection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../webGPU/">
+            
+                <a href="../../webGPU/">
+            
+                    
+                    webGPU
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../webGPU/document/">
+            
+                <a href="../../webGPU/document/">
+            
+                    
+                    document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../cesium/">
+            
+                <a href="../../cesium/">
+            
+                    
+                    Cesium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../cesium/shader/">
+            
+                <a href="../../cesium/shader/">
+            
+                    
+                    Custom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../cesium/event/">
+            
+                <a href="../../cesium/event/">
+            
+                    
+                    Event
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Transform</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x53D8;&#x6362;"><b>1. </b>&#x53D8;&#x6362;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;homogeneous-coordinates&#xFF09;"><b>1.1. </b>&#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;Homogeneous Coordinates&#xFF09;</a></li><li><span class="title-icon "></span><a href="#2d-&#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2d-transformation-matrices&#xFF09;"><b>1.2. </b>2D &#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2D Transformation Matrices&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;view-transformation&#xFF09;"><b>1.3. </b>&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;View Transformation&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;projection-transformation&#xFF09;"><b>1.4. </b>&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;Projection Transformation&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;orthographic-projection&#xFF09;"><b>1.4.1. </b>&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;Orthographic Projection&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;perspective-projection&#xFF09;"><b>1.4.2. </b>&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;Perspective Projection&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#threejs-&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;"><b>1.5. </b>THREE.JS &#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;</a></li></ul></ul></div><a href="#&#x53D8;&#x6362;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x53D8;&#x6362;"><a name="&#x53D8;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x53D8;&#x6362;</h1>
+<blockquote>
+<p>&#x56FE;&#x5F62;&#x5B66;&#x4E2D;&#x7684;&#x53D8;&#x6362;&#x4E3B;&#x8981;&#x5305;&#x542B;&#xFF1A;&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;View Transformation&#xFF09;&#x548C;&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;Projection Transformation&#xFF09;</p>
+</blockquote>
+<ul>
+<li><p>&#x89C6;&#x56FE;&#x53D8;&#x6362;&#x662F;&#x6307;&#x4ECE;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x76F8;&#x673A;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x53D8;&#x6362;&#x8FC7;&#x7A0B;&#x3002;&#x89C6;&#x56FE;&#x53D8;&#x6362;&#x662F;&#x4E3A;&#x4E86;&#x6A21;&#x62DF;&#x76F8;&#x673A;&#x5728;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x65B9;&#x5411;&#xFF0C;&#x5E76;&#x51B3;&#x5B9A;&#x4E86;&#x89C2;&#x5BDF;&#x8005;&#x5728;&#x573A;&#x666F;&#x4E2D;&#x770B;&#x5230;&#x7684;&#x89C6;&#x56FE;&#x3002;&#x901A;&#x8FC7;&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x76F8;&#x673A;&#x7684;&#x79FB;&#x52A8;&#x3001;&#x65CB;&#x8F6C;&#x548C;&#x7F29;&#x653E;&#x7B49;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x6539;&#x53D8;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x89C6;&#x89D2;&#x548C;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+</li>
+<li><p>&#x6295;&#x5F71;&#x53D8;&#x6362;&#x662F;&#x6307;&#x5C06;&#x76F8;&#x673A;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x7684;&#x4E09;&#x7EF4;&#x70B9;&#x6295;&#x5F71;&#x5230;&#x4E8C;&#x7EF4;&#x5C4F;&#x5E55;&#x7A7A;&#x95F4;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x6295;&#x5F71;&#x53D8;&#x6362;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#x6216;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+</li>
+<li><p>&#x533A;&#x522B;&#xFF1A;&#x89C6;&#x56FE;&#x53D8;&#x6362;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x76F8;&#x673A;&#x4F4D;&#x7F6E;&#x548C;&#x65B9;&#x5411;&#x7684;&#x53D8;&#x6362;&#xFF0C;&#x4EE5;&#x53CA;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x89C6;&#x89D2;&#xFF1B;&#x800C;&#x6295;&#x5F71;&#x53D8;&#x6362;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x5C06;&#x4E09;&#x7EF4;&#x70B9;&#x4ECE;&#x76F8;&#x673A;&#x5750;&#x6807;&#x7CFB;&#x6295;&#x5F71;&#x5230;&#x4E8C;&#x7EF4;&#x5C4F;&#x5E55;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x8003;&#x8651;&#x900F;&#x89C6;&#x6548;&#x679C;&#x548C;&#x6295;&#x5F71;&#x65B9;&#x5F0F;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;homogeneous-coordinates&#xFF09;"><a name="&#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;homogeneous-coordinates&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;homogeneous-coordinates&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x9F50;&#x6B21;&#x5750;&#x6807;&#xFF08;Homogeneous Coordinates&#xFF09;</h2>
+<blockquote>
+<p>&#x9F50;&#x6B21;&#x5750;&#x6807;&#x6CA1;&#x90A3;&#x4E48;&#x590D;&#x6742;&#xFF0C;&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x989D;&#x5916;&#x7684;&#x7EF4;&#x5EA6;&#xFF08;w-coordinate&#xFF09;&#xFF0C;&#x8BA9;&#x5E73;&#x79FB;&#x4E5F;&#x80FD;&#x50CF;&#x65CB;&#x8F6C;&#x548C;&#x7F29;&#x653E;&#x4E00;&#x6837;&#x5199;&#x6210; <code>3 x 3</code> &#x7684;&#x77E9;&#x9635;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x7B1B;&#x5361;&#x5C14;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#xFF0C;&#x5E73;&#x79FB;&#x4E0D;&#x662F;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x77E9;&#x9635;&#x4E2D;&#xFF1A;</p>
+<p><script type="math/tex; ">\begin{bmatrix}
+  x_a\\
+  y_a\\
+  \end{bmatrix}</script> = <script type="math/tex; ">\begin{bmatrix}
+  a & b\\
+  c & d\\
+  \end{bmatrix}</script> &#xB7; <script type="math/tex; ">\begin{bmatrix}
+  x\\
+  y\\
+  \end{bmatrix}</script> + <script type="math/tex; ">\begin{bmatrix}
+  t_x\\
+  t_y\\
+  \end{bmatrix}</script></p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x5176;&#x6B21;&#x5750;&#x6807;&#xFF1A;</p>
+<p><script type="math/tex; ">\begin{bmatrix}
+  x_a\\
+  y_a\\
+  1\\
+  \end{bmatrix}</script> = <script type="math/tex; ">\begin{bmatrix}
+  a & b & t_x\\
+  c & d & t_y\\
+  0 & 0 & 1\\
+  \end{bmatrix}</script> &#xB7; <script type="math/tex; ">\begin{bmatrix}
+  x\\
+  y\\
+  1\\
+  \end{bmatrix}</script></p>
+</li>
+</ul>
+<blockquote>
+<p>w &#x4E3A;1&#x65F6;&#xFF0C;&#x8868;&#x793A;&#x70B9;&#xFF1B;w &#x4E3A;0&#x65F6;&#xFF0C;&#x8868;&#x793A;&#x5411;&#x91CF;:</p>
+</blockquote>
+<ul>
+<li><p>2D point = <script type="math/tex; ">\begin{bmatrix}
+  x\\
+  y\\
+  1\\
+  \end{bmatrix}</script></p>
+</li>
+<li><p>2D vector = <script type="math/tex; ">\begin{bmatrix}
+  x\\
+  y\\
+  0\\
+  \end{bmatrix}</script></p>
+</li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x9F50;&#x6B21;&#x5750;&#x6807;&#x4E2D;&#xFF0C;&#x5BF9; w &#x5750;&#x6807;&#x7684;&#x7406;&#x89E3;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li>vector + vector = vector</li>
+<li>point &#x2013; point = vector</li>
+<li>point + vector = point</li>
+<li>point + point = ?? &#xFF08;&#x53D6;&#x4E2D;&#x70B9;&#xFF09;</li>
+</ul>
+<h2 id="2d-&#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2d-transformation-matrices&#xFF09;"><a name="2d-&#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2d-transformation-matrices&#xFF09;" class="anchor-navigation-ex-anchor" href="#2d-&#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2d-transformation-matrices&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 2D &#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF08;2D Transformation Matrices&#xFF09;</h2>
+<blockquote>
+<p>2D &#x53D8;&#x6362;&#x77E9;&#x9635;&#x4E2D;&#xFF0C;&#x5E73;&#x79FB;&#x548C;&#x65CB;&#x8F6C;&#x90FD;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x597D;&#x63A8;&#x5BFC;&#x7684;&#x662F;&#x65CB;&#x8F6C;&#x77E9;&#x9635;</p>
+</blockquote>
+<p>R(&#x3B1;) = <script type="math/tex; ">\begin{bmatrix}
+cosα & -sinα & 0\\
+sinα & cosα & 0\\
+0 & 0 & 1\\
+\end{bmatrix}</script></p>
+<blockquote>
+<p>&#x7EC4;&#x5408;&#x53D8;&#x6362;&#xFF08;S1&#xFF1A;&#x7F29;&#x653E;&#xFF1B;T2&#xFF1A;&#x5E73;&#x79FB;&#xFF1B;R3&#xFF1A;&#x65CB;&#x8F6C;&#xFF09;&#xFF0C;&#x7C7B;&#x4F3C; <code>js</code> &#x4E2D;&#x7684; <code>compose</code> &#x51FD;&#x6570;&#x3002;</p>
+</blockquote>
+<p>R3(T2(S1(X))) = R3 &#xB7; T2 &#xB7; S1 &#xB7; <script type="math/tex; ">\begin{bmatrix}
+x\\
+y\\
+1\\
+\end{bmatrix}</script></p>
+<h2 id="&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;view-transformation&#xFF09;"><a name="&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;view-transformation&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;view-transformation&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x89C6;&#x56FE;&#x53D8;&#x6362;&#xFF08;View Transformation&#xFF09;</h2>
+<blockquote>
+<p>&#x89C6;&#x56FE;&#x53D8;&#x6362;&#x53EA;&#x6D89;&#x53CA;&#x5230;&#x5E73;&#x79FB;&#x548C;&#x65CB;&#x8F6C;&#xFF1A;</p>
+</blockquote>
+<ol>
+<li><p>&#x5C06;&#x76F8;&#x673A;&#x7684;&#x4F4D;&#x7F6E;&#x65CB;&#x8F6C;&#x5230;&#x5750;&#x6807;&#x539F;&#x70B9;&#xFF1B;</p>
+</li>
+<li><p>&#x5C06;&#x76F8;&#x673A;&#x5411;&#x4E0A;&#x7684;&#x65B9;&#x5411;&#x65CB;&#x8F6C;&#x5230; Y &#x65B9;&#x5411;&#xFF1B;</p>
+</li>
+<li><p>&#x5C06;&#x76F8;&#x673A;&#x770B;&#x5411;&#x7684;&#x65B9;&#x5411;&#x65CB;&#x8F6C;&#x5230; -Z &#x65B9;&#x5411;&#xFF1B;</p>
+</li>
+</ol>
+<blockquote>
+<p>&#x5982;&#x679C;&#x76F8;&#x673A;&#x7684;&#x4F4D;&#x7F6E;&#x9ED8;&#x8BA4;&#x5C31;&#x5728;&#x5750;&#x6807;&#x539F;&#x70B9;&#xFF0C;&#x5411;&#x4E0A;&#x65B9;&#x5411;&#x4E3A; Y &#x65B9;&#x5411;&#xFF0C;&#x5E76;&#x4E14;&#x770B;&#x5411;&#x7684;&#x65B9;&#x5411;&#x662F; -Z &#x65B9;&#x5411;&#xFF0C;&#x90A3;&#x4E48;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4F4D;&#x77E9;&#x9635;&#x3002;</p>
+</blockquote>
+<h2 id="&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;projection-transformation&#xFF09;"><a name="&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;projection-transformation&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;projection-transformation&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF08;Projection Transformation&#xFF09;</h2>
+<blockquote>
+<p>&#x6295;&#x5F71;&#x53D8;&#x6362;&#x662F;&#x6307;&#x5C06;&#x76F8;&#x673A;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x7684;&#x4E09;&#x7EF4;&#x70B9;&#x6295;&#x5F71;&#x5230;&#x4E8C;&#x7EF4;&#x5C4F;&#x5E55;&#x7A7A;&#x95F4;&#x7684;&#x8FC7;&#x7A0B;</p>
+</blockquote>
+<p><img src="../../../imgs/projection.png" alt="z-buffer code"></p>
+<h3 id="&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;orthographic-projection&#xFF09;"><a name="&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;orthographic-projection&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;orthographic-projection&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF08;Orthographic Projection&#xFF09;</h3>
+<blockquote>
+<p>&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#x53EA;&#x6D89;&#x53CA;&#x5230;&#x5E73;&#x79FB;&#x548C;&#x7F29;&#x653E;&#xFF1A;</p>
+</blockquote>
+<ol>
+<li><p>&#x5C06;&#x4E2D;&#x5FC3;&#x5E73;&#x79FB;&#x5230;&#x5750;&#x6807;&#x539F;&#x70B9;&#xFF1B;</p>
+</li>
+<li><p>&#x7F29;&#x653E;&#x5230;&#x6807;&#x51C6;&#x7ACB;&#x65B9;&#x4F53;(canonical cube)&#xFF1A;[-1, 1]^3</p>
+</li>
+</ol>
+<h3 id="&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;perspective-projection&#xFF09;"><a name="&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;perspective-projection&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;perspective-projection&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF08;Perspective Projection&#xFF09;</h3>
+<blockquote>
+<p>&#x5728;&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x518D;&#x4E58;&#x4EE5;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x8FD9;&#x4E2A;&#x77E9;&#x9635;&#x63A8;&#x5BFC;&#x6709;&#x70B9;&#x590D;&#x6742;&#x3002;</p>
+</blockquote>
+<h2 id="threejs-&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;"><a name="threejs-&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;" class="anchor-navigation-ex-anchor" href="#threejs-&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. THREE.JS &#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;</h2>
+<blockquote>
+<p>&#x5728; <code>THREE.JS</code> &#x4E2D;&#xFF0C;&#x89C6;&#x56FE;&#x77E9;&#x9635;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;&#x90FD;&#x88AB;&#x5C01;&#x88C5;&#x5230; <code>camera</code> &#x4E2D;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> viewMatrix = camera.matrixWorldInverse;
+<span class="hljs-keyword">const</span> projectionMatrix = camera.projectionMatrix;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;View Matrix:&apos;</span>, viewMatrix);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Projection Matrix:&apos;</span>, projectionMatrix);
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tomgou 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-07-10 15:38:22
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Pipeline/" class="navigation navigation-prev " aria-label="Previous page: Graphics Pipeline">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Rasterization/" class="navigation navigation-next " aria-label="Next page: Rasterization">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Transform","level":"1.2.3","depth":2,"next":{"title":"Rasterization","level":"1.2.4","depth":2,"path":"pages/threeJS/Rasterization/index.md","ref":"pages/threeJS/Rasterization/index.md","articles":[]},"previous":{"title":"Graphics Pipeline","level":"1.2.2","depth":2,"path":"pages/threeJS/Pipeline/index.md","ref":"pages/threeJS/Pipeline/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload","mathjax-pro","github","hide-element","chapter-fold","splitter","-lunr","-search","search-pro","copy-code-button","back-to-top-button","tbfed-pagefooter","popup","mermaid-gb3","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tomgou 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://tomgou.github.io/algorithm-study/"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"back-to-top-button":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"tomgou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"3d学习笔记","language":"zh-hans","gitbook":"*","description":"3d相关知识学习笔记"},"file":{"path":"pages/threeJS/Transform/index.md","mtime":"2023-07-10T07:38:22.536Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-12T06:49:21.694Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
