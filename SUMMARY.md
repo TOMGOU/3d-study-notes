@@ -13,6 +13,7 @@
     * [BuiltInFunction](pages/shader/BuiltInFunction/index.md)
     * [BuiltInVariable](pages/shader/BuiltInVariable/index.md)
     * [Shapes](pages/shader/Shapes/index.md)
+    * [KeyPoints](pages/shader/KeyPoints/index.md)
 * [3D-Display](pages/3DDisplay/index.md)
     * [Draco](pages/3DDisplay/Draco/index.md)
     * [glTF](pages/3DDisplay/glTF/index.md)
@@ -46,3 +47,4 @@
     * [document](pages/webGPU/document/index.md)
 * [Cesium](pages/cesium/index.md)
     * [Custom](pages/cesium/shader/index.md)
+    * [Event](pages/cesium/event/index.md)
